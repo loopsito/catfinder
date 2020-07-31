@@ -16,15 +16,15 @@
 
 .header {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     background-color: var(--first-color);
 }
 
 .header__img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: .5rem;
     cursor: pointer;
 
@@ -58,7 +58,7 @@
 
 .header__menu--profile {
     display: flex;
-    height: 100%;
+    height: 100%;;
     align-items: center;
     margin: .5rem 1rem 0 0;
     cursor: pointer;
@@ -66,6 +66,7 @@
 
 .header__menu--profile img {
     margin-right: 1rem;
+    width: 50px;
 }
 
 .header__menu--profile p {
@@ -74,7 +75,7 @@
 }
 
 .main {
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,13 +168,13 @@
 .carousel--item__details--title {
     font-weight: bold;
     font-size: 1.2rem;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: sans-serif;
 
 }
 
 .carousel--item__details--subtitle {
     font-size: .8rem;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: sans-serif;
 }
 
 .carousel--item__details:hover {
@@ -195,12 +196,20 @@
     min-height: 450px;
     width: 300px;
     padding: 2rem 1.5rem;
+    display: inherit;
+    flex-direction: column;
 }
 
 .login__container h2 {
     text-align: center;
     margin-bottom: .5rem;
 }
+
+.login__container p {
+    text-align: center;
+    font-size: 1rem;
+}
+
 
 .login__container--form {
     display: flex;
@@ -235,7 +244,6 @@
 .login__container--form .btn:hover {
     background-color:var(--fifth-color);
     border: solid 2px black;
-    transition: all ease 450ms;
 }
 
 .login__container--remember {
@@ -259,7 +267,33 @@
 }
 
 .login__container--social--media div {
+    padding: .5rem;
+    width: 100%;
+    justify-content: center;
     display: flex;
+    font-size: 1rem;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    border:1px solid rgba(0, 0, 0, 0.075) ;
+}
+.login__container--social--media div img {
+    margin-right: .4rem;
+}
+.login__container--social--media .google {
+    margin-top: .3rem;
+    margin-bottom: .9rem;
+}
+
+.login__container--social--media div:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 15px;
+    border:1px solid black;
+}
+
+.login__container--register {
+    margin-top: 2rem;
 }
 
 .login__container--social--media p, 
@@ -267,8 +301,18 @@
 .login__container--remember label,
 .login__container--register,
 .login__container--register a {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
 }
 
+.login__container--register a {
+    font-weight: bold;
+}
+
+.login__container--register a:hover,
+.login__container--remember___password:hover {
+    text-decoration: underline;
+}
 
 
